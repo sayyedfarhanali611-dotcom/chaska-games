@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaska Games - Mobile Game Studio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #6366f1;
+            --text-color: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #a5b4fc;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #60a5fa;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #4338ca;
+        }
+
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #020617;
+            color: var(--text-secondary);
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chaska Games Studio</h1>
+        <p>Creating Fun, Relaxing & Addictive Mobile Games</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Our Featured Game</h2>
+        
+        <div class="game-grid">
+            <div class="card">
+                <h3>🧩 Chaska Jigsaw Puzzle</h3>
+                <p>Relax and challenge your brain with 100 high-definition levels! Includes Beautiful Paintings, Nature Landscapes, Cute Animals, and Iconic Architecture.</p>
+                <ul>
+                    <li>100 Sequential Levels</li>
+                    <li>Authentic Interlocking Shapes</li>
+                    <li>Relaxing Audio & Snap Sound Effects</li>
+                </ul>
+                <a href="#" class="btn">Download APK / Play Store</a>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Upcoming Games</h3>
+                <p>We are constantly working on fresh and exciting gaming experiences. Stay tuned for our upcoming puzzle and casual titles!</p>
+                <p><strong>Status:</strong> In Active Development 🛠️</p>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 3rem;">Player Support & Helpdesk</h2>
+        <div class="card">
+            <h3>Need Help or Found a Bug?</h3>
+            <p>If you have any questions, feedback, or need assistance regarding <strong>Chaska Jigsaw Puzzle</strong>, feel free to reach out to our team.</p>
+            <p>📧 Email Support: <strong>support@chaskagames.com</strong></p>
+        </div>
+    </div>
+
+    <div class="chat-widget">
+        💬 AI Player Support Chat
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Chaska Games Studio. All Rights Reserved. | <a href="#" style="color: #a5b4fc;">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
