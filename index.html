@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaska Games - Mobile Game Studio</title>
+
+    <!-- Primary Meta Tags for Google Search SEO -->
+    <title>Chaska Sort Puzzle - Official Mobile Game by Chaska Games Studio</title>
+    <meta name="description" content="Play Chaska Sort Puzzle by Chaska Games Studio on Android. Download from Google Play Store for free. 100+ brain relaxing levels, jigsaw sorting, and beautiful puzzle gameplay.">
+    <meta name="keywords" content="Chaska Sort Puzzle, Chaska Games, Chaska Foods, Sort Puzzle Android, Download Chaska Sort Puzzle, Google Play Store Chaska Sort Puzzle">
+    <link rel="canonical" href="https://sayyedfarhanali611-dotcom.github.io/chaska-games/">
+
+    <!-- Open Graph / Social SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chaska Sort Puzzle - Download on Google Play">
+    <meta property="og:description" content="Relax and challenge your brain with 100 HD puzzle levels. Available now on Google Play Store.">
+    <meta property="og:url" content="https://sayyedfarhanali611-dotcom.github.io/chaska-games/">
+
+    <!-- Schema Structured Data for Google App Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Chaska Sort Puzzle",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "GameApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.chaskafoods.sortpuzzle",
+      "author": {
+        "@type": "Organization",
+        "name": "Chaska Games Studio"
+      }
+    }
+    </script>
+
     <style>
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
             --accent-color: #6366f1;
+            --google-play-green: #01875f;
             --text-color: #f8fafc;
             --text-secondary: #94a3b8;
         }
@@ -75,20 +109,27 @@
             color: #60a5fa;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.6rem 1.2rem;
-            border-radius: 6px;
+        .btn-playstore {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: var(--google-play-green);
+            color: #ffffff;
+            padding: 0.75rem 1.4rem;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 1.2rem;
+            transition: background 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
 
-        .btn:hover {
-            background-color: #4338ca;
+        .btn-playstore:hover {
+            background-color: #016b4b;
+            transform: scale(1.02);
+            color: #ffffff;
         }
 
         footer {
@@ -116,10 +157,15 @@
                 <p>Relax and challenge your brain with 100 high-definition levels! Includes Beautiful Paintings, Nature Landscapes, Cute Animals, and Iconic Architecture.</p>
                 <ul>
                     <li>100 Sequential Levels</li>
-                    <li>Authentic Interlocking Shapes</li>
+                    <li>Authentic Interlocking Shapes & Color Sorting</li>
                     <li>Relaxing Audio & Snap Sound Effects</li>
+                    <li>Official Package: <code>com.chaskafoods.sortpuzzle</code></li>
                 </ul>
-                <a class="btn" href="https://play.google.com/store/apps/details?id=com.chaskafoods.sortpuzzle" target="_blank">Download APK / Play Store</a>
+                
+                <!-- Google Search & Crawl Optimized Store Link -->
+                <a class="btn-playstore" href="https://play.google.com/store/apps/details?id=com.chaskafoods.sortpuzzle" target="_blank" rel="noopener">
+                    ▶ Get it on Google Play
+                </a>
             </div>
 
             <div class="card">
